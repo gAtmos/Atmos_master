@@ -1,5 +1,4 @@
-*.yaml
-*.yml
+
 .yaml_json.py
 .vscode
 *.pyc

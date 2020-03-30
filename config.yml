@@ -1,0 +1,31 @@
+shelves:
+  - id: 0
+    address: 0x00
+    lights: 
+      - id: 0
+        program: &program
+          keys: # key frames so we can chain event -> cycle -> ...
+            - cycle: 
+                period: "1w 1d 01:02:03" # every one day week + one day + one hour + 2 minutes + 3 seconds
+                command: "on" # on|off
+                repeat: 5 # null means always
+                starting: "2020-01-23 " # null means now
+            - event: # null means always
+          
+    fans: 
+      - id: 0
+        program:
+          <<: *program
+    pumps: 
+      - id: 0
+        program:
+          <<: *program
+  - id: 1
+    lights: []
+    fans: []
+    pumps: []
+  - id: 2
+    lights: []
+    fans: []
+    pumps: []
+
