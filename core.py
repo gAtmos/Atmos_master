@@ -13,7 +13,7 @@ class Core():
     """ Orchestrator object. Can read configuration file to plan actions """
 
     DATE_FORMAT = "%Y-%m-%d %H:%M"
-    WAIT_INTERVAL = 1
+    WAIT_INTERVAL = 60 * 60 * 24
 
     def __init__(self, initial_config="config.json"):
         
